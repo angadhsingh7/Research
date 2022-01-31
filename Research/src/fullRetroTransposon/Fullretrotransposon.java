@@ -111,7 +111,7 @@ public class Fullretrotransposon {
 						writer.write(chr_start_end[0] + ":" + chr_start_end[1] + "-" + chr_start_end[2] + "\n");
 						int start = Integer.parseInt(chr_start_end[1]);
 						int end = Integer.parseInt(chr_start_end[2]);
-						writer.write(new String (chrseq, start, end-start) + "\n");
+						writer.write(new String (chrseq, start-5, end-start+5) + "\n");
 //						for (int n = start; n <= end; n=n+80) {
 //							if (n+80 <= end) {
 //								writer.write(new String (chrseq, n, 80) + "\n");
@@ -126,7 +126,7 @@ public class Fullretrotransposon {
 						writer.write(chr_start_end_second_line[0] + ":" + chr_start_end_second_line[1] + "-" + chr_start_end_second_line[2] + "\n");
 						int start = Integer.parseInt(chr_start_end_second_line[1]);
 						int end = Integer.parseInt(chr_start_end_second_line[2]);
-						writer.write(new String (chrseq, start, end-start) + "\n");
+						writer.write(new String (chrseq, start-5, end-start+5) + "\n");
 //						for (int n = start; n <= end; n=n+80) {
 //							if (n+80 <= end) {
 //								writer.write(new String (chrseq, n, 80) + "\n");
